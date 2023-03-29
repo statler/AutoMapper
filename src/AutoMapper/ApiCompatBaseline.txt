@@ -1,13 +1,127 @@
 Compat issues with assembly AutoMapper:
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.AutoMapAttribute' changed from '[AttributeUsageAttribute(1036, AllowMultiple=true)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Class | AttributeTargets.Interface | AttributeTargets.Struct, AllowMultiple=true)]' in the implementation.
-InterfacesShouldHaveSameMembers : Interface member 'public void AutoMapper.Configuration.ICtorParamConfigurationExpression.ExplicitExpansion()' is present in the implementation but not in the contract.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.IgnoreAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.MapAtRuntimeAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.MappingOrderAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.NullSubstituteAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.SourceMemberAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.UseExistingValueAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.ValueConverterAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-CannotChangeAttribute : Attribute 'System.AttributeUsageAttribute' on 'AutoMapper.Configuration.Annotations.ValueResolverAttribute' changed from '[AttributeUsageAttribute(384)]' in the contract to '[AttributeUsageAttribute(AttributeTargets.Field | AttributeTargets.Property)]' in the implementation.
-TypeCannotChangeClassification : Type 'AutoMapper.Execution.TypeMapPlanBuilder' is a 'ref struct' in the implementation but is a 'struct' in the contract.
-Total Issues: 11
+TypesMustExist : Type 'AutoMapper.AutoMapAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.AutoMapperConfigurationException' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.AutoMapperMappingException' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.ContextCacheKey' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.DuplicateTypeMapConfigurationException' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.ExactMatchNamingConvention' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IConfigurationProvider' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMapperBase' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMapperConfigurationExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMappingAction<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMappingExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMappingExpression<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMappingExpressionBase<TSource, TDestination, TMappingExpression>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMappingOperationOptions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMappingOperationOptions<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMemberConfigurationExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMemberConfigurationExpression<TSource, TDestination, TMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IMemberValueResolver<TSource, TDestination, TSourceMember, TDestMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.INamingConvention' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IProfileConfiguration' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IProfileExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IProjectionExpression<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IProjectionExpression<TSource, TDestination, TMappingExpression>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IProjectionExpressionBase<TSource, TDestination, TMappingExpression>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IProjectionMemberConfiguration<TSource, TDestination, TMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IRuntimeMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.ITypeConverter<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IValueConverter<TSourceMember, TDestinationMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.IValueResolver<TSource, TDestination, TDestMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.LowerUnderscoreNamingConvention' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Mapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.MapperConfiguration' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.MapperConfigurationExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.MappingOperationOptions<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.MemberList' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.PascalCaseNamingConvention' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Profile' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.ResolutionContext' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.ValueTransformerConfiguration' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.ValueTransformerConfigurationExtensions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.ConditionParameters<TSource, TDestination, TMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.ICtorParamConfigurationExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.ICtorParamConfigurationExpression<TSource>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.ICtorParameterConfiguration' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.IMemberConfigurationProvider' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.IPathConfigurationExpression<TSource, TDestination, TMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.IPropertyMapConfiguration' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.ISourceMemberConfiguration' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.ISourceMemberConfigurationExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.MappingExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.MappingExpression<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.MappingExpressionBase<TSource, TDestination, TMappingExpression>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.MemberConfigurationExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.MemberConfigurationExpression<TSource, TDestination, TMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.PathConfigurationExpression<TSource, TDestination, TMember>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.SourceMappingExpression' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.SourceMemberConfig' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.ValidationContext' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.IgnoreAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.MapAtRuntimeAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.MappingOrderAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.NullSubstituteAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.SourceMemberAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.UseExistingValueAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.ValueConverterAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Annotations.ValueResolverAttribute' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Conventions.ISourceToDestinationNameMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Conventions.PrePostfixName' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Configuration.Conventions.ReplaceName' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ClassTypeConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ClassValueResolver' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ConvertParameterReplaceVisitor' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ExpressionResolver' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ExpressionTypeConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.FuncResolver' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.IValueResolver' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.LambdaTypeConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.LambdaValueResolver' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.Member' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.MemberPathResolver' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ParameterReplaceVisitor' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.PropertyDescription' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ProxyBase' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ProxyGenerator' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ReplaceVisitor' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ReplaceVisitorBase' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.TypeConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.TypeDescription' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.TypeMapPlanBuilder' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ValueConverter' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Execution.ValueResolverConfig' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Features.FeatureExtensions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Features.Features<TFeature>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Features.IGlobalFeature' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Features.IMappingFeature' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Features.IRuntimeFeature' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.ConstructorParameters' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.LockingConcurrentDictionary<TKey, TValue>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.MapRequest' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.TypeExtensions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.TypePair' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.AssignableMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.CollectionMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ConstructorMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ConversionOperatorMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ConvertMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.EnumToEnumMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.FromDynamicMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.FromStringDictionaryMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.IObjectMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.KeyValueMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.MultidimensionalArrayFiller' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.NullableDestinationMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.NullableSourceMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ObjectMapper<TSource, TDestination>' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ParseStringMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.StringToEnumMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ToDynamicMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ToStringDictionaryMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.ToStringMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.Internal.Mappers.UnderlyingTypeEnumMapper' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.QueryableExtensions.Extensions' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.QueryableExtensions.MemberVisitor' does not exist in the implementation but it does exist in the contract.
+TypesMustExist : Type 'AutoMapper.QueryableExtensions.Impl.MemberProjection' does not exist in the implementation but it does exist in the contract.
+Total Issues: 125
