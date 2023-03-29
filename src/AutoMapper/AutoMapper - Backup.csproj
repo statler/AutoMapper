@@ -25,10 +25,9 @@
     <BaselineAllAPICompatError>true</BaselineAllAPICompatError>
     <AdditionalApiCompatOptions>--exclude-non-browsable --exclude-compiler-generated</AdditionalApiCompatOptions>
     <Title>Automapper for EF6 in .Net5+ / .Net Standard 2.1</Title>
-    <AssemblyVersion>12.1.1.2</AssemblyVersion>
+    <AssemblyVersion>12.1.1.1</AssemblyVersion>
     <Version>$(AssemblyVersion)</Version>
     <PackageTags>Automapper; EF6</PackageTags>
-    <Authors>Statler</Authors>
   </PropertyGroup>
 
   <ItemGroup>
